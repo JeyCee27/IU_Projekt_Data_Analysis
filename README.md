@@ -7,7 +7,7 @@ Somit müssen die Dateien "Datasetprojpowerbi.txt" und "requirements.txt" zusamm
 Die Abhängigkeiten können mit dem Terminal Befehl pip install -r requirements.txt  instaliert werden.
 
 # Anpassen des Codes
-Bei der Vektorizierung werden sowohl Unigrams (Einzelwörter) und Bigrams (Zwei Wöerter) verwendet. Wenn nur Unigrams verwendet werden sollen muss die "ngram_range" im code auf (1,1) geändert werden.
+Bei der Vektorisierung werden sowohl Unigrams (Einzelwörter) und Bigrams (Zwei Wöerter) verwendet. Wenn nur Unigrams verwendet werden sollen muss die "ngram_range" im code auf (1,1) geändert werden.
 Bei der Extrahierung der Themen gibt "n_components" die Anzahl der Themen an die Etrahiert werden sollen.
 Beim aufrufen der Funktion topic_extraction gibt "num_words" die Anzahl der Wörter pro Thema an.
 Diese Werte können je nch Anforderung geändert werden.
