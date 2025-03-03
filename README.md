@@ -7,15 +7,15 @@ Die Abhängigkeiten können mit dem Terminal Befehl pip install -r requirements.
 
 # Anpassen des Codes
 Bei der Vektorisierung werden sowohl Unigrams (Einzelwörter) und Bigrams (Zwei Wöerter) verwendet. Wenn nur Unigrams verwendet werden sollen muss die "ngram_range" im code auf (1,1) geändert werden.
-Bei der Extrahierung der Themen gibt "n_components" die Anzahl der Themen an die Etrahiert werden sollen.
-Beim aufrufen der Funktion topic_extraction gibt "num_words" die Anzahl der Wörter pro Thema an.
-Diese Werte können je nch Anforderung geändert werden.
+Bei der Extrahierung der Themen gibt "n_components" die Anzahl der Themen an die Extrahiert werden sollen.
+Beim Aufrufen der Funktion topic_extraction gibt "num_words" die Anzahl der Wörter pro Thema an.
+Diese Werte können je nach Anforderung geändert werden.
 
 # Nutzen einer andere Datei:
-Wenn eine andere Datei als die hier Vorliegene Beispieldatei eingelesen werden soll, muss im Code der Name der zu öffnenden Datei geändert werden.
+Wenn eine andere Datei als die hier vorliegene Beispieldatei eingelesen werden soll, muss im Code der Name der zu öffnenden Datei geändert werden.
 
 # Ausgabe der Zwischenergebnisse als Datei:
-Um den mit den zwei Methoden Bow & Tfidf Vektorisierten Text detalierter zu betrachten, kann diser als Datei ausgegeben werden. Der dazu benötigte Befehl ist im Code in einem Kommentare zu finden.
+Um den mit den zwei Methoden Bow & Tfidf vektorisierten Text detailierter zu betrachten, kann dieser als Datei ausgegeben werden. Der dazu benötigte Befehl ist im Code in einem Kommentar zu finden.
 
 
 
