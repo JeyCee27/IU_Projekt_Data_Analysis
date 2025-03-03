@@ -17,6 +17,7 @@ with open('Datasetprojpowerbi.txt', 'r') as file:
     reader = csv.reader(file)
     df = [row[1] for row in reader]
 
+#Definieren der Stopwörter
 stopwords = stopwords.words("english")
 add_stopwords =("made", "ve", "i've", "ix", "i'll")
 stopwords.extend(add_stopwords)
