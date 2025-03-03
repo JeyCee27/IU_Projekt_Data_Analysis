@@ -2,8 +2,7 @@
 
 
 # Grundlegendes:
-Die zu analysierende Datei muss im txt Format mit dem Code zusammen in einem Verzeichnis gespeichert werden.
-Somit müssen die Dateien "Datasetprojpowerbi.txt" und "requirements.txt" zusammen mit dem Code "Textanalyse_03_03_2025" in einem Verzeichnis gespeichert werden.
+Die Dateien "Datasetprojpowerbi.txt" und "requirements.txt",die im txt Format vorliegen müssen, werden zusammen mit dem Code "Textanalyse_03_03_2025" in einem Verzeichnis gespeichert.
 Die Abhängigkeiten können mit dem Terminal Befehl pip install -r requirements.txt  instaliert werden.
 
 # Anpassen des Codes
