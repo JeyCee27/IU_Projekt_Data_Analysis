@@ -22,7 +22,7 @@ stopwords = stopwords.words("english")
 add_stopwords =("made", "ve", "i've", "ix", "i'll")
 stopwords.extend(add_stopwords)
 
-#Text vorverarbeitung mit Lemmatisation
+#Textvorverarbeitung mit Lemmatisation
 def preprocess_text(text):
     text = re.sub(r'\d+', '', text)
     tokens = word_tokenize(text)
@@ -32,7 +32,7 @@ def preprocess_text(text):
     lemmatized_tokens = [lemmatizer.lemmatize(token) for token in filtered_tokens]
     return " ".join(lemmatized_tokens)
 
-#Vektorizierung mit BoW
+#Vektorisierung mit BoW
 count_vect = CountVectorizer(preprocessor=preprocess_text, analyzer='word',
                        ngram_range=(1, 2), max_df=1.0, min_df=1, max_features=None,)
 bow = count_vect.fit_transform(df)
@@ -41,10 +41,10 @@ bow = pd.DataFrame(bow.toarray(), columns=count_vect.get_feature_names_out())
 print('Bag of word Vokabular:')
 print(bow)
 
-#Mit dem folgenden Code kann der mit BoW vektorizierte Text als Datei ausgegeben werden.
+#Mit dem folgenden Code kann der mit BoW vektorisierte Text als Datei ausgegeben werden.
 #bow.to_csv('bow_Vokabular.csv', index=False)
 
-#Vektorizierung mit Tf-Idf
+#Vektorisierung mit Tf-Idf
 tfidf_vect = TfidfVectorizer(preprocessor=preprocess_text, analyzer='word',
                        ngram_range=(1, 2), max_df=1.0, min_df=1, max_features=None,)
 tfidf = tfidf_vect.fit_transform(df)
@@ -53,7 +53,7 @@ tfidf = pd.DataFrame(tfidf.toarray(), columns=tfidf_vect.get_feature_names_out()
 print('TfIdf Vokabular:')
 print(tfidf)
 
-#Mit dem folgenden Code kann der mit Tfidf vektorizierte Text als Datei ausgegeben werden.
+#Mit dem folgenden Code kann der mit Tfidf vektorisierte Text als Datei ausgegeben werden.
 #tfidf.to_csv('tfidf_Vokabular.csv', index=False)
 
 
@@ -84,7 +84,7 @@ print('Themen mit LSA und Tf-Idf:')
 topic_extraction(lsa_tfidf, terms, 10,)
 
 
-#LDA it BoW:
+#LDA mit BoW:
 lda_bow = LatentDirichletAllocation(n_components=20, learning_method='online', random_state=42, max_iter=10)
 lda =lda_bow.fit_transform(bow)
 terms = count_vect.get_feature_names_out()
