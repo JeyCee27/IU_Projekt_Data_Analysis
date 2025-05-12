@@ -2,14 +2,13 @@
 
 
 # Grundlegendes:
-Die Dateien "Datasetprojpowerbi.txt" und "requirements.txt",die im txt Format vorliegen müssen, werden zusammen mit dem Code "Textanalyse_03_03_2025" in einem Verzeichnis gespeichert.
+Die Dateien "Datasetprojpowerbi.txt" und "requirements.txt",die im txt Format vorliegen, müssen zusammen mit dem Code "Textanalyse_11_05_2025" in einem Verzeichnis gespeichert.
 Die Abhängigkeiten können mit dem Terminal Befehl pip install -r requirements.txt  instaliert werden.
 
 # Anpassen des Codes
 Bei der Vektorisierung werden sowohl Unigrams (Einzelwörter) und Bigrams (Zwei Wöerter) verwendet. Wenn nur Unigrams verwendet werden sollen muss die "ngram_range" im code auf (1,1) geändert werden.
 Bei der Extrahierung der Themen gibt "n_components" die Anzahl der Themen an die Extrahiert werden sollen.
 Beim Aufrufen der Funktion topic_extraction gibt "num_words" die Anzahl der Wörter pro Thema an.
-Diese Werte können je nach Anforderung geändert werden.
 
 # Nutzen einer andere Datei:
 Wenn eine andere Datei als die hier vorliegene Beispieldatei eingelesen werden soll, muss im Code der Name der zu öffnenden Datei geändert werden.
