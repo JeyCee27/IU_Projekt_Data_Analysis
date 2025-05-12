@@ -5,7 +5,7 @@
 Die Dateien "Datasetprojpowerbi.txt" und "requirements.txt",die im txt Format vorliegen, müssen zusammen mit dem Code "Textanalyse_11_05_2025" in einem Verzeichnis gespeichert.
 Die Abhängigkeiten können mit dem Terminal Befehl pip install -r requirements.txt  instaliert werden.
 
-Nutzung des Codes:
+# Nutzung des Codes:
 Nach dem Ausführen des Codes wird ein Diagramm angezeigt. Mit der dort abgebildeten Kurve lässt sich die Optimale Themenanzahl bestimmen. Dazu muss die Zahl auf der X-Achse abgelesen werden an der Stelle, wo die abgebildete Funktion biet bzw. einen knick hat. Bei der Beispieldatei ist dies an der Zahl 9. Nach dem ablesen der Zahl kann diese unter dem Kommentar „Parameter Definieren“ für n_components eingetragen werden.
 
 # Anpassen des Codes
