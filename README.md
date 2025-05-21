@@ -1,5 +1,6 @@
 # Kurze Erklärung zur Nutzung des Codes
 
+Neuste Version des Codes: Textanalyse_11_05_2025
 
 # Grundlegendes:
 Die Dateien "Datasetprojpowerbi.txt" und "requirements.txt",die im txt Format vorliegen, müssen zusammen mit dem Code "Textanalyse_11_05_2025" in einem Verzeichnis gespeichert.
